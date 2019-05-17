@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import App from './App.vue';
-
-const y = { ...App };
+import createStore from './store';
 
 new Vue({
     el: '#app',
-    render: h => h(App)
+    render: h => h(App),
+    store: createStore()
 });
