@@ -1,5 +1,6 @@
 function initialState() {
     return {
+        next: '',
         items: [
             {
                 checked: true,
@@ -15,7 +16,19 @@ function initialState() {
 
 const state = initialState();
 
-const actions = {};
+const actions = {
+    async onUpdateNext({commit}, payload) {
+        // TODO: Replace me
+    },
+
+    async onAddNewItem({commit}, payload) {
+        // TODO: Replace me
+    },
+
+    async onToggleItem({commit}, index) {
+        // TODO: Replace me
+    }
+};
 
 const mutations = {};
 
