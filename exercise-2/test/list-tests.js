@@ -1,5 +1,5 @@
-const createStore = require('../src/store');
-const assert = require('assert');
+import createStore from '../src/store';
+import assert from 'assert';
 
 describe("list tests", () => {
 
