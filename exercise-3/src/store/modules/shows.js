@@ -9,31 +9,18 @@ function initialState() {
 const state = initialState();
 
 const actions = {
-    async onSearch({commit}, payload) {
-        const result = await showSearch().query(payload);
-        commit('updateSearch', result);
+    onSearch({commit}, payload) {
+        console.log(`onSearch triggered with the string "${payload}"`);
     }
 };
 
 const mutations = {
     updateSearch(state, payload) {
-        state.searchResult = payload.map(entry => ({
-            ...entry,
-            rating: {
-                ...entry.rating,
-                class: entry.rating.percentage >= 50 ?
-                    'good' :
-                    'bad',
-            }
-        }));
     }
 };
-
-const getters = {};
 
 export default {
     state,
     actions,
     mutations,
-    getters
 };
