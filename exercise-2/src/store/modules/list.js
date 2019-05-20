@@ -21,7 +21,7 @@ const actions = {
         // TODO: Replace me
     },
 
-    async onAddNewItem({commit}, payload) {
+    async onAddNewItem({commit}) {
         // TODO: Replace me
     },
 
