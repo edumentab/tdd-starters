@@ -1,4 +1,4 @@
-import { showSearch } from '../../services/showSearch';
+import { getService } from '../../services/showSearch';
 
 function initialState() {
     return {

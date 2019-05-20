@@ -19,7 +19,7 @@ let service = {
     }
 };
 
-export function showSearch() {
+export function getService() {
     return service;
 }
 
