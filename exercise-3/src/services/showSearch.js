@@ -5,7 +5,6 @@ let service = {
         const url = `${baseUrl}/search/shows?q=${encodeURIComponent(searchString)}`;
         const request = await fetch(url);
         const response = await request.json();
-        console.log(response);
 
         // Grab the bits we're interested in
         return response.map(entry => ({
