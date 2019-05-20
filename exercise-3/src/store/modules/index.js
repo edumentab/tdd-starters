@@ -1,5 +1,5 @@
-import movies from './movies';
+import shows from './shows';
 
 export default {
-    movies
+    shows
 }
