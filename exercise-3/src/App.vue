@@ -1,5 +1,20 @@
 <template>
     <div>
-        <h1>Hello world</h1>
+        <input type="text" ref="searchText" />
+        <input type="submit" value="Search" @click="search" />
     </div>
 </template>
+
+<script>
+    export default {
+        name: "App",
+        components: {},
+
+        methods: {
+            search() {
+                const text = this.$refs.searchText.value;
+                this.$store.dispatch('onSearch', text);
+            }
+        }
+    }
+</script>
